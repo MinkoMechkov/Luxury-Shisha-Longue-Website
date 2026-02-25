@@ -54,21 +54,21 @@ export function Menu() {
   };
 
   return (
-    <section id="menu" className="py-24 px-6 bg-black">
+    <section id="menu" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">
               Our Menu
             </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 max-w-3xl mx-auto px-2">
             Discover our carefully curated selection of premium shisha flavors, 
             signature cocktails, and authentic Middle Eastern cuisine
           </p>
@@ -105,7 +105,7 @@ export function Menu() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Icon className="w-6 h-6 text-amber-400" />
-                    <h3 className="text-3xl font-bold text-white capitalize">{category}</h3>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white capitalize">{category}</h3>
                   </div>
                   <div className="grid md:grid-cols-2 gap-6">
                     {items.map((item, index) => (
@@ -129,10 +129,10 @@ export function Menu() {
                         <div className="absolute inset-0 bg-gradient-to-r from-amber-500/0 via-purple-500/0 to-teal-500/0 group-hover:from-amber-500/5 group-hover:via-purple-500/5 group-hover:to-teal-500/5 rounded-2xl transition-all duration-500"></div>
                         <div className="relative z-10 flex justify-between items-start">
                           <div>
-                            <h4 className="text-xl font-bold text-white mb-2">{item.name}</h4>
-                            <p className="text-gray-400">{item.description}</p>
+                          <h4 className="text-lg sm:text-xl font-bold text-white mb-2">{item.name}</h4>
+                            <p className="text-xs sm:text-sm text-gray-400">{item.description}</p>
                           </div>
-                          <span className="text-2xl font-bold text-amber-400 ml-4">{item.price}</span>
+                          <span className="text-xl sm:text-2xl font-bold text-amber-400 ml-4">{item.price}</span>
                         </div>
                       </motion.div>
                     ))}

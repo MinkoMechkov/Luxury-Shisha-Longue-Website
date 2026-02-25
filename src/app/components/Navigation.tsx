@@ -49,7 +49,7 @@ export function Navigation() {
             {/* Logo */}
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent"
+              className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent"
             >
               MYSTIQUE LOUNGE
             </motion.div>

@@ -26,7 +26,7 @@ export function Footer() {
           <div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-3xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent mb-4"
+              className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent mb-4"
             >
               MYSTIQUE LOUNGE
             </motion.div>

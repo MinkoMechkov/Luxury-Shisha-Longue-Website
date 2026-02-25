@@ -26,21 +26,21 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 bg-gradient-to-b from-black via-purple-950/10 to-black">
+    <section id="about" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-purple-950/10 to-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">
               The Lounge Experience
             </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 max-w-3xl mx-auto px-2">
             Step into a world where Middle Eastern tradition meets contemporary luxury. 
             Our lounge offers an unparalleled atmosphere designed for those who appreciate 
             the finer things in life.
@@ -60,7 +60,7 @@ export function About() {
           
           <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-white mb-4">Our Story</h3>
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Our Story</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 Since opening our doors, Mystique Lounge has been the destination for discerning 
                 guests seeking an authentic yet refined shisha experience. Our passionate team 

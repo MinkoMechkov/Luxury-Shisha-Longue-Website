@@ -42,21 +42,21 @@ export function Events() {
   ];
 
   return (
-    <section id="events" className="py-24 px-6 bg-gradient-to-b from-black via-purple-950/10 to-black">
+    <section id="events" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-purple-950/10 to-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">
               Events & Nights
             </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 max-w-3xl mx-auto px-2">
             Join us for unforgettable nights filled with music, culture, and connection
           </p>
         </motion.div>
@@ -88,14 +88,14 @@ export function Events() {
                     <Icon className="w-8 h-8 text-white" />
                   </div>
 
-                  <h3 className="text-3xl font-bold text-white mb-3">{event.title}</h3>
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3">{event.title}</h3>
                   
                   <div className="flex items-center gap-2 mb-4">
                     <Calendar className="w-5 h-5 text-gray-400" />
                     <span className="text-gray-400">{event.time}</span>
                   </div>
 
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed">
                     {event.description}
                   </p>
 
@@ -120,10 +120,10 @@ export function Events() {
           className="mt-16 text-center"
         >
           <div className="inline-block bg-gradient-to-r from-purple-900/30 to-amber-900/30 border border-purple-500/30 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-4">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
               Want to host a private event?
             </h3>
-            <p className="text-gray-400 mb-6 max-w-xl">
+            <p className="text-xs sm:text-sm md:text-base text-gray-400 mb-6 max-w-xl">
               Our lounge is perfect for birthdays, corporate events, and special celebrations. 
               Contact us for custom packages.
             </p>

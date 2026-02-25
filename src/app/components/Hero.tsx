@@ -11,14 +11,14 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-[60vh] sm:h-[70vh] md:h-[85vh] lg:h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black z-10"></div>
         <img
           src={heroShishaImage}
           alt="Luxury lounge"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-left"
         />
       </div>
 
@@ -65,17 +65,17 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-500/10 to-purple-500/10 border border-amber-500/20 rounded-full px-6 py-2 mb-8"
+          className="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-500/10 to-purple-500/10 border border-amber-500/20 rounded-full px-3 sm:px-6 py-1.5 sm:py-2 mb-4 sm:mb-8"
         >
-          <Sparkles className="w-4 h-4 text-amber-400" />
-          <span className="text-amber-400 text-sm tracking-wider">PREMIUM EXPERIENCE</span>
+          <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-amber-400" />
+          <span className="text-amber-400 text-xs sm:text-sm tracking-wider">PREMIUM EXPERIENCE</span>
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-6xl md:text-8xl font-bold mb-6 tracking-tight"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-4 sm:mb-6 tracking-tight"
         >
           <span className="block text-white">Where Flavor</span>
           <span className="block bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">
@@ -87,7 +87,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto"
+          className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto px-2"
         >
           Experience the perfect blend of luxury, culture, and relaxation in the heart of the city
         </motion.p>
@@ -96,11 +96,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center px-4"
         >
           <button
             onClick={() => scrollToSection('#reservations')}
-            className="group relative px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-semibold rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50"
+            className="group relative px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-semibold text-xs sm:text-sm md:text-base rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50"
           >
             <span className="relative z-10">Reserve a Table</span>
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -108,7 +108,7 @@ export function Hero() {
 
           <button
             onClick={() => scrollToSection('#menu')}
-            className="group px-8 py-4 bg-transparent border-2 border-purple-500/50 text-white font-semibold rounded-full transition-all hover:scale-105 hover:bg-purple-500/10 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/30"
+            className="group px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 bg-transparent border-2 border-purple-500/50 text-white font-semibold text-xs sm:text-sm md:text-base rounded-full transition-all hover:scale-105 hover:bg-purple-500/10 hover:border-purple-400 hover:shadow-lg hover:shadow-purple-500/30"
           >
             View Menu
           </button>

@@ -34,21 +34,21 @@ export function Reservations() {
   };
 
   return (
-    <section id="reservations" className="py-24 px-6 bg-gradient-to-b from-black via-purple-950/10 to-black">
+    <section id="reservations" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-purple-950/10 to-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-amber-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">
               Reserve Your Table
             </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 max-w-3xl mx-auto px-2">
             Book your spot for an unforgettable evening at Mystique Lounge
           </p>
         </motion.div>
@@ -121,14 +121,14 @@ export function Reservations() {
                 <div>
                   <label className="block text-gray-300 mb-2 font-medium">Date</label>
                   <div className="relative">
-                    <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none z-10" />
+                    <Calendar className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none z-10" />
                     <input
                       type="date"
                       name="date"
                       value={formData.date}
                       onChange={handleChange}
                       required
-                      className="w-full bg-black/50 border border-purple-500/30 rounded-xl pl-12 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all [color-scheme:dark]"
+                      className="w-full bg-black/50 border border-purple-500/30 rounded-xl px-4 md:pl-12 md:pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all [color-scheme:dark]"
                     />
                   </div>
                 </div>
@@ -136,14 +136,14 @@ export function Reservations() {
                 <div>
                   <label className="block text-gray-300 mb-2 font-medium">Time</label>
                   <div className="relative">
-                    <Clock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none z-10" />
+                    <Clock className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none z-10" />
                     <input
                       type="time"
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
                       required
-                      className="w-full bg-black/50 border border-purple-500/30 rounded-xl pl-12 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all [color-scheme:dark]"
+                      className="w-full bg-black/50 border border-purple-500/30 rounded-xl px-4 md:pl-12 md:pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all [color-scheme:dark]"
                     />
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export function Reservations() {
             <div className="relative bg-gradient-to-br from-purple-900/20 to-black border border-purple-500/20 rounded-3xl p-8">
               <div className="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-purple-500/5 rounded-3xl"></div>
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 flex items-center gap-3">
                   <Clock className="w-6 h-6 text-amber-400" />
                   Opening Hours
                 </h3>
